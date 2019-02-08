@@ -1,0 +1,77 @@
+header {
+  background-color: #881b0f;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: yellow;
+  }
+  
+  .first-row {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    #logo-name {
+      font-family: -webkit-pictograph;
+      animation-name: moveInRight;
+      animation-duration: 3s;
+    }
+
+    h1 {
+      margin-bottom: 0px;
+    }
+
+    #tag-line {
+      font-size: 0.75em;
+      font-family: cursive;
+      padding-bottom: 10px;
+      color: peru;
+    }
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 25px 10px 25px;
+    color: wheat;
+    background-color: brown;
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
