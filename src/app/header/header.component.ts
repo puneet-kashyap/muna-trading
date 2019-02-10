@@ -13,5 +13,12 @@ export class HeaderComponent implements OnInit {
   }
 
   companyName='Muna Trading Co.'
+  tagLine='Confectionery goods distributor'
+  routes=[
+    {url: '/', link: 'Home'},
+    {url: '/products', link: 'Products'},
+    {url: '/location', link: 'Location'},
+    {url: '/signin', link: 'SignIn'},
+  ]
 
 }

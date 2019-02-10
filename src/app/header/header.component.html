@@ -2,17 +2,16 @@
   <div class="first-row">
     <div id="logo-name">
       <h1>
-        <a routerLink="/" routerLinkActive="active">{{companyName}}</a>
+        <a routerLink="/" routerLinkActive="active">{{ companyName }}</a>
       </h1>
       <div id="tag-line">
-        <span>Confectionery goods distributor</span>
+        <span>{{ tagLine }}</span>
       </div>
     </div>
   </div>
   <nav class="navbar">
-    <a routerLink="/" routerLinkActive="active">Home</a>
-    <a routerLink="/flyer" routerLinkActive="active">Products</a>
-    <a routerLink="/reservations" routerLinkActive="active">Location</a>
-    <a routerLink="/contact" routerLinkActive="active">Sign In</a>
-</nav>
+    <a *ngFor="let route of routes" routerLink="{{ route.url }}">
+      {{ route.link }}
+    </a>
+  </nav>
 </header>
