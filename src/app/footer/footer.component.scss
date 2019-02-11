@@ -1,0 +1,49 @@
+$footerLinkColor: chocolate;
+$footerBackgroundColor: #881b0f;
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: footerBackgroundColor;
+  color: white;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  .contact-section {
+    text-align: center;
+    padding: 20px;
+    .name {
+      padding: 5px;
+      font-size: 1.25em;
+    }
+    .contact:first-child {
+      margin-bottom: 20px;
+    }
+    @media only screen and (min-width: 600px) {
+      display: flex;
+      justify-content: space-around;
+      .contact:first-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .address {
+    text-align: center;
+    color: peru;
+    margin: 10px;
+    font-size: small;
+  }
+
+  #copyright {
+    text-align: center;
+    font-size: smaller;
+    color: $footerLinkColor;
+    background-color: brown;
+    padding: 5px;
+    a {
+      color: $footerLinkColor;
+    }
+  }
+}
