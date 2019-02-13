@@ -1,0 +1,40 @@
+#page-heading {
+  text-align: center;
+  color: #881b0f;
+  h1 {
+    font-size: xx-large;
+    text-decoration: underline;
+  }
+}
+#contacts {
+  display: flex;
+  justify-content: space-around;
+  a {
+    text-decoration: none;
+    color: currentColor;
+  }
+  h2,
+  h5 {
+    margin: 5px;
+    color: darkslateblue;
+  }
+  h3 {
+    margin-bottom: 5px;
+  }
+  .contact {
+    text-align: center;
+    background-color: transparent;
+  }
+
+  @media only screen and (max-width: 600px) {
+    display: inline;
+    .contact {
+      margin: 20px;
+    }
+  }
+}
+
+#map {
+  height: 70vh;
+  margin: 20px 0px;
+}

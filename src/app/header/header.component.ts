@@ -17,8 +17,8 @@ export class HeaderComponent implements OnInit {
   routes=[
     {url: '/', link: 'Home'},
     {url: '/products', link: 'Products'},
-    {url: '/location', link: 'Location'},
-    {url: '/signin', link: 'SignIn'},
+    {url: '/contacts', link: 'Contact Us'},
+    {url: '/signin', link: 'Sign In'},
   ]
 
 }
