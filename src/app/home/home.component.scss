@@ -1,0 +1,20 @@
+$textColor: darkblue;
+#home {
+  padding: 25px;
+  #main {
+    .company-name {
+      font-size: xx-large;
+      color: $textColor;
+    }
+    .reasons {
+      font-size: x-large;
+      color: $textColor;
+    }
+    .reason-title {
+      display: block;
+      padding: 5px;
+      color: $textColor;
+      font-size: large;
+    }
+  }
+}

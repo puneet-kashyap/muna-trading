@@ -10,13 +10,15 @@ import {MatCardModule} from '@angular/material/card';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    ContactsComponent
+    ContactsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
