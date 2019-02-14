@@ -1,0 +1,22 @@
+<div id="home">
+  <div id="main">
+    <p>
+      <span class="company-name">{{ companyName }}</span>,
+      {{ intro }}
+    </p>
+    <p *ngFor="let description of descriptions">
+      {{ description }}
+    </p>
+    <p class="reasons">
+      Top Reasons to Shop with Muna Trading Co.
+    </p>
+    <ol>
+      <li *ngFor="let reason of reasons">
+        <p>
+          <span class="reason-title">{{ reason.title }}</span>
+          {{ reason.text }}
+        </p>
+      </li>
+    </ol>
+  </div>
+</div>
